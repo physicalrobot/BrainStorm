@@ -2,15 +2,23 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 
 
-const Checkbox = ({ value, setCheck }) => {
+const Checkbox = ({ checkstatus, handleCheck }) => {
+
+
+
     return (
         <input
-            key={uuid()}
             type='checkbox'
-            key={uuid()} checked={value}
-            onChange={setCheck}
+            key={uuid()} checked={checkstatus}
+            onChange={handleCheck}
 
-        ></input>
+
+        >
+
+
+
+        </input>
+
     );
 };
 

@@ -17,6 +17,7 @@ function CodeNotes() {
 
     function handleAddTask(newtask) {
         return setTask([...tasks, newtask])
+        // console.log(tasks)
     }
 
 
@@ -36,7 +37,7 @@ function CodeNotes() {
             <Editor />
 
             <TaskList tasks={tasks} deleteTask={handleDeleteTask} />
-            <NewTaskList text={tasks.text} handleAddTask={handleAddTask} />
+            <NewTaskList tasks={tasks} text={tasks.text} handleAddTask={handleAddTask} />
 
         </div>
 

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
-function NewTaskList({ handleAddTask }) {
+function NewTaskList({ handleAddTask, tasks }) {
 
     const [text, setText] = useState('');
 
+
     function handleSubmit(e) {
         e.preventDefault();
+
         handleAddTask({ text });
         setText('');
 
@@ -13,8 +15,11 @@ function NewTaskList({ handleAddTask }) {
 
 
     return (
-        < form className="new-task-form" onSubmit={handleSubmit}  >
+        < form className="newform" onSubmit={handleSubmit}  >
+
+
             <input
+
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}

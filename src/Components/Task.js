@@ -1,14 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuid } from "uuid";
-import { css, jsx } from '@emotion/react';
+// import { css, jsx } from '@emotion/react';
 import Checkbox from './Checkbox';
 
 
-function Task({ text, complete, deleteTask, setCheck, value }) {
+function Task({ text, complete, deleteTask, value, tasks }) {
 
 
 
-    const boxRef = React.useRef(null);
 
     const [color, setColor] = useState('black');
 
@@ -19,17 +18,29 @@ function Task({ text, complete, deleteTask, setCheck, value }) {
 
     function handleClick() {
         deleteTask(text);
+
     }
 
+    const [check, setCheck] = useState(false);
+
+
+
+
+    function handleCheck() {
+        setCheck(!check);
+    }
 
 
     return (
 
-        <div>
+
+        <div >
+
 
             <Checkbox
                 key={uuid()}
-                value={value} setCheck={setCheck} />
+                checkstatus={check} handleCheck={handleCheck} tasks={tasks} />
+
 
 
             <label style={{ color: color }}
@@ -41,7 +52,10 @@ function Task({ text, complete, deleteTask, setCheck, value }) {
                 {text}
             </label>
 
+
+
         </div>
+
     )
 }
 
