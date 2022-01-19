@@ -30,18 +30,14 @@ function Task({ text, complete, deleteTask, value, tasks }) {
         setCheck(!check);
     }
 
-
     return (
 
 
         <div className='ToDoList' >
 
-
             {/* <Checkbox
                 key={uuid()}
                 checkstatus={check} handleCheck={handleCheck} tasks={tasks} /> */}
-
-
 
             <label
                 style={{ color: color }}

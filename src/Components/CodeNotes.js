@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TaskList from "./TaskList";
-import Editor from './Editor'
+import TextEditor from './TextEditor'
 import Notepad from './Notepad'
 import NewTaskList from './NewTaskList'
 import { TASKS } from './data'
@@ -32,9 +32,6 @@ function CodeNotes() {
     return (
 
         <div>
-            <Notepad />
-
-            <Editor />
 
             <TaskList tasks={tasks} deleteTask={handleDeleteTask} />
             <NewTaskList tasks={tasks} text={tasks.text} handleAddTask={handleAddTask} />

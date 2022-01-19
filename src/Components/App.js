@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import lofiimage from '../lofi_generator w headphones.png'
 import Music from './Music'
 import CodeNotes from './CodeNotes';
+import TextEditor from './TextEditor';
 
 function App() {
 
@@ -24,7 +25,10 @@ function App() {
   return (
     <div className="App">
 
+
+
       <br></br>
+
 
       <div className='Lofipic'>
         <div id='lofimg'
@@ -33,14 +37,22 @@ function App() {
         />
 
       </div>
+
       <div className='contentbody'
-        style={{ transform: `translateY(-${offsetY * 1.5}px)` }}
+        style={{ transform: `translateY(-${offsetY * 1.55}px)` }}
       >
         <CodeNotes />
+
         <Music />
-
-
       </div >
+      <div className='textbox'
+        style={{ transform: `translateY(-${offsetY * 1.9}px)` }}
+      >
+        <TextEditor />
+
+      </div>
+
+
 
       <br></br>
 

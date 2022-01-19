@@ -9,7 +9,7 @@
 
   }
   
- 
+
   .todobutton{
     width: 60px;
     height: 20px;
@@ -23,7 +23,17 @@
   text-align: center;
 }
 
-   
+  
+#htmltxtarea{
+  background-color: rgba(128, 128, 128, 0.637);
+  border-radius: 15px;
+  position:relative;
+  left:150px;
+  width:50%;
+  height:100px;
+}
+
+
 .Lofipic {
   display: flex;
   justify-content: center;
@@ -37,6 +47,30 @@
     background-size: contain;
     position:absolute;
     /* top:0; */
-  
-   
+
   }
+
+  .textbox{
+    width:600px;
+    height:100%;
+    margin:auto;
+    left:-40px;
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.589);   
+    color:white; 
+    border-radius: 30px;
+  }
+
+  div.rdw-editor-toolbar{
+    background-color: rgba(128, 128, 128, 0.637);
+    border-radius: 15px;
+    border-color:black;
+  }
+  div.rdw-dropdown-wrapper {
+    color:black;
+    background-color:#e2d7d7a2;
+  }
+
+div.rdw-option-wrapper{
+  background-color:  #e2d7d7a2;
+}
