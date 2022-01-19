@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../App.css';
 
 function NewTaskList({ handleAddTask, tasks }) {
 
@@ -15,17 +16,18 @@ function NewTaskList({ handleAddTask, tasks }) {
 
 
     return (
+
         < form className="newform" onSubmit={handleSubmit}  >
 
-
+            <br></br>
             <input
 
                 type="text"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
             />
-
-            <input type="submit" value="Add task" />
+            <br></br><br></br>
+            <input className='todobutton' type="submit" value="Add task" />
         </form>
     );
 };

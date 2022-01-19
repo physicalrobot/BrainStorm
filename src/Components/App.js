@@ -5,6 +5,8 @@ import Music from './Music'
 import CodeNotes from './CodeNotes';
 
 function App() {
+
+
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -15,23 +17,34 @@ function App() {
   }, []);
 
 
+
+
+
+
   return (
     <div className="App">
-      <div className='Parallax'>
-        <div
-          className="Parallax__background"
-          style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
+
+      <br></br>
+
+      <div className='Lofipic'>
+        <div id='lofimg'
+          className="lofipicture"
+        // style={{ transform: `translateY(-${offsetY * 3}px)` }}
         />
 
       </div>
-      <div className='contentbody'>
-        <h1>BrainStorm</h1>
-
+      <div className='contentbody'
+        style={{ transform: `translateY(-${offsetY * 1.5}px)` }}
+      >
         <CodeNotes />
-
         <Music />
-        {/* <img src={lofiimage} alt='vibes'></img> */}
+
+
       </div >
+
+      <br></br>
+
+
     </div>
   );
 }

@@ -9,11 +9,11 @@ function Task({ text, complete, deleteTask, value, tasks }) {
 
 
 
-    const [color, setColor] = useState('black');
+    const [color, setColor] = useState('white');
 
 
     function handleMouseOver() {
-        setColor('red')
+        setColor('turquoise')
     }
 
     function handleClick() {
@@ -34,18 +34,19 @@ function Task({ text, complete, deleteTask, value, tasks }) {
     return (
 
 
-        <div >
+        <div className='ToDoList' >
 
 
-            <Checkbox
+            {/* <Checkbox
                 key={uuid()}
-                checkstatus={check} handleCheck={handleCheck} tasks={tasks} />
+                checkstatus={check} handleCheck={handleCheck} tasks={tasks} /> */}
 
 
 
-            <label style={{ color: color }}
+            <label
+                style={{ color: color }}
                 onMouseEnter={handleMouseOver}
-                onMouseOut={() => setColor('black')}
+                onMouseOut={() => setColor('white')}
                 onClick={handleClick}
 
             >

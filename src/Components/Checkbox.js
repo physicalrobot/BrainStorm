@@ -12,10 +12,7 @@ const Checkbox = ({ checkstatus, handleCheck }) => {
             key={uuid()} checked={checkstatus}
             onChange={handleCheck}
 
-
         >
-
-
 
         </input>
 
