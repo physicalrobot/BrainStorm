@@ -4,6 +4,7 @@ import lofiimage from '../lofi_generator w headphones.png'
 import Music from './Music'
 import CodeNotes from './CodeNotes';
 import TextEditor from './TextEditor';
+import ThreeEditors from './ThreeEditors';
 
 function App() {
 
@@ -27,35 +28,41 @@ function App() {
 
 
 
+
+
       <br></br>
 
 
       <div className='Lofipic'>
         <div id='lofimg'
           className="lofipicture"
-        // style={{ transform: `translateY(-${offsetY * 3}px)` }}
+          style={{ transform: `translateY(-${offsetY * .5}px)` }}
         />
-
       </div>
 
+
+
+
+
+
       <div className='contentbody'
-        style={{ transform: `translateY(-${offsetY * 1.55}px)` }}
+        style={{ transform: `translateY(-${offsetY * 2.4}px)` }}
       >
         <CodeNotes />
 
         <Music />
       </div >
+
+
+
+
       <div className='textbox'
-        style={{ transform: `translateY(-${offsetY * 1.9}px)` }}
+        style={{ transform: `translateY(-${offsetY * 2.4}px)` }}
       >
         <TextEditor />
-
       </div>
 
-
-
       <br></br>
-
 
     </div>
   );

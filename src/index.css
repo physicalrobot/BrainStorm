@@ -10,6 +10,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
+html, 
+body {
+    height: 100%;
+}
+
+#root{
+  position:relative;
+  top:-600px;
+  height:20%;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -22,6 +32,8 @@ code {
   margin:0;
   padding:0;
 }
+
+
 
 
 .margin{
@@ -43,9 +55,11 @@ code {
 } 
 
 .parallax-innter{
-  padding-top: 15%;
-  padding-bottom: 2000px;
+  padding-top: 10%;
+  padding-bottom: 2700px;
   align-items: center;
+  
+
 }
 
 #thetitle{
@@ -53,7 +67,6 @@ code {
 width: 50%;
 margin:auto;
 border-radius:30px;
-
 }
 
 
@@ -72,11 +85,78 @@ h1{
   padding: 50px;
   margin: auto;
   position:relative;
+  top:-60px;
   left:-700px;
   color:white;
   background-color:rgba(0, 0, 0, 0.404);
   border-radius: 30px;
+  
 
 
 }
 
+
+.codeeditor{
+  position:relative;
+  top:-2500px;
+  background-color: rgba(0, 0, 0, 0.404);
+  width:1000px;
+  height:700px;
+  margin:auto;
+  
+
+}
+
+#html-code{
+  position:relative;
+  top: 20%;
+  height:200px;
+  width:300px;
+  left:50px;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-color: grey;
+  color:white;
+  font-size: 20px;
+
+}
+#css-code{
+  position:relative;
+  top: 20%;
+  height:200px;
+  width:300px;
+  left:50px;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-color: grey;
+  color:white;
+  font-size: 20px;
+
+}
+#js-code{
+  position:relative;
+  top: 20%;
+  height:200px;
+  width:300px;
+  left:50px;
+  background-color: rgba(0, 0, 0, 0.404);
+  border-color: grey;
+  color:white;
+  font-size: 20px;
+
+}
+
+#iframe{
+  position:relative;
+  top:200px;
+  background-color: transparent
+}
+
+#output{
+  position:relative;
+  left:100px;
+  top: 30%;
+  height:200px;
+  width:800px;
+  color:white;
+  border-color: rgb(161, 159, 159);
+  background-color:rgba(240, 232, 219, 0.472);
+}
