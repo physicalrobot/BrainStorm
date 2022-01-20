@@ -35,7 +35,7 @@
   border-radius: 15px;
   position:relative;
   top:180px;
-  left:100px;
+  left:120px;
   width:60%;
   height:100px;
   color:white;
@@ -47,6 +47,7 @@
   justify-content: center;
   position:relative;
   top:120px;
+  left:-60px;
 
 }  
   .lofipicture {
@@ -56,15 +57,16 @@
     background-repeat: no-repeat;
     background-size: contain;
     position:absolute;
+    
     /* top:0; */
 
   }
 
   .textbox{
-    width:600px;
+    width:580px;
     height:400px;
     margin:auto;
-    left:850px;
+    left:730px;
     position:relative;
     background-color: rgba(0, 0, 0, 0.589);   
     color:white; 

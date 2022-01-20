@@ -63,10 +63,14 @@ code {
 }
 
 #thetitle{
-  background-color:rgba(0, 0, 0, 0.404);
-width: 50%;
+  background-color:#0000009b;
+width: 700px;
 margin:auto;
 border-radius:30px;
+position:relative;
+left:-85px;
+font-family: 'Indie Flower', cursive;
+
 }
 
 
@@ -81,12 +85,14 @@ h1{
 }
 
 .contentbody{
-  width: 300px;
+  width:400px;
+  height:400px;
+  /* width: 300px; */
   padding: 50px;
   margin: auto;
   position:relative;
-  top:-60px;
-  left:-700px;
+  top:75px;
+  left:-780px;
   color:white;
   background-color:rgba(0, 0, 0, 0.404);
   border-radius: 30px;
@@ -103,6 +109,8 @@ h1{
   width:1000px;
   height:700px;
   margin:auto;
+  border-radius: 15px;
+  left:-70px;
   
 
 }
