@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position:relative;
 
 }
 html, 
@@ -18,13 +19,20 @@ body {
 #root{
   position:relative;
   top:-600px;
-  height:20%;
+  height:0;
+  z-index: 2;
+}
+
+div.App{
+  height: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
 
 
 
@@ -48,19 +56,51 @@ code {
 }
 
 
+
 .parallax{
   background:url('./bckgroundimg.jpg')
   repeat fixed 100%;
   background-size: cover;
+  z-index: 0;
 } 
 
 .parallax-innter{
   padding-top: 10%;
-  padding-bottom: 2700px;
+  padding-bottom: 3300px;
   align-items: center;
   
 
 }
+
+
+
+#youtube-icon{
+  position:sticky;
+  top:-200px;
+  
+}
+
+
+
+#youtube-audio{
+  position: sticky;
+    bottom:0;
+  width: 2%;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  left:46.5%;
+
+
+  
+}
+
+#vidcontainer{
+  position:relative;
+  top:-1750px;
+  z-index:1;
+}
+
 
 #thetitle{
   background-color:#0000009b;
@@ -91,7 +131,7 @@ h1{
   padding: 50px;
   margin: auto;
   position:relative;
-  top:75px;
+  top:100px;
   left:-780px;
   color:white;
   background-color:rgba(0, 0, 0, 0.404);

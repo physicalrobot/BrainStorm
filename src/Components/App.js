@@ -1,7 +1,6 @@
 import '../App.css';
 import React, { useState, useEffect } from 'react';
 import lofiimage from '../lofi_generator w headphones.png'
-import Music from './Music'
 import CodeNotes from './CodeNotes';
 import TextEditor from './TextEditor';
 import ThreeEditors from './ThreeEditors';
@@ -36,9 +35,10 @@ function App() {
       <div className='Lofipic'>
         <div id='lofimg'
           className="lofipicture"
-          style={{ transform: `translateY(-${offsetY * .3}px)` }}
+          style={{ transform: `translateY(-${offsetY * .7}px)` }}
         />
       </div>
+
 
 
 
@@ -50,7 +50,6 @@ function App() {
       >
         <CodeNotes />
 
-        <Music />
       </div >
 
 
