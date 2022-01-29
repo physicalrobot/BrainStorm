@@ -8,15 +8,16 @@ function TaskList({ tasks, deleteTask }) {
 
 
 
+
     const taskList = tasks.map((task) => (
+        console.log(task),
 
 
-        <Task
-            key={uuid()}
+        < Task
+            key={task.id}
             text={task.text}
-            complete={task.complete}
             deleteTask={deleteTask}
-            tasks={tasks}
+            task={task}
         />
     ));
 

@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { v4 as uuid } from "uuid";
-// import { css, jsx } from '@emotion/react';
-import Checkbox from './Checkbox';
 
 
-function Task({ text, complete, deleteTask, value, tasks }) {
-
-
-
+function Task({ text, complete, deleteTask, value, task, key }) {
 
     const [color, setColor] = useState('white');
+    const [dtext, setDtext] = useState('');
+
 
 
     function handleMouseOver() {
@@ -17,27 +14,27 @@ function Task({ text, complete, deleteTask, value, tasks }) {
     }
 
     function handleClick() {
-        deleteTask(text);
 
+
+        fetch(`http://localhost:4000/tasks/${task.id}`, {
+            method: 'DELETE'
+        })
+            .then((r) => r.json(),
+                deleteTask(task));
     }
 
-    const [check, setCheck] = useState(false);
 
 
 
 
-    function handleCheck() {
-        setCheck(!check);
-    }
+
 
     return (
 
 
         <div className='ToDoList' >
 
-            {/* <Checkbox
-                key={uuid()}
-                checkstatus={check} handleCheck={handleCheck} tasks={tasks} /> */}
+
 
             <label
                 style={{ color: color }}
