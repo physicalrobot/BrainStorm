@@ -42,7 +42,7 @@ function App() {
       <div className='Lofipic'>
         <div id='lofimg'
           className="lofipicture"
-          style={{ transform: `translateY(-${offsetY * .7}px)` }}
+          style={{ transform: `translateY(-${offsetY * .8}px)` }}
         />
       </div>
 
