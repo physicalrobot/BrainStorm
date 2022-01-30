@@ -1,8 +1,8 @@
 import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+
 
 function ThreeEditors() {
-
-
 
     function run() {
         let htmlCode = document.querySelector('.codeeditor #html-code').value;
@@ -13,23 +13,30 @@ function ThreeEditors() {
         output.contentDocument.body.innerHTML = htmlCode + cssCode;
         output.contentWindow.eval(jsCode);
     }
-
+    document.querySelector('.codeeditor #html-code').addEventListener('keyup', run);
+    document.querySelector('.codeeditor #css-code').addEventListener('keyup', run);
+    document.querySelector('.codeeditor #js-code').addEventListener('keyup', run);
 
 
     return (
+        <div>
+            <div class='codeeditortitles'>
 
-        <div class='codeeditor'>
+                <h1>
+                    <nav id='nav'>
 
-            <textarea id='html-code'></textarea>
-            <textarea id='css-code'></textarea>
-            <textarea id='js-code'></textarea>
-            <iframe id='output'></iframe>
+                        <Link to="/about">About</Link> <span></span>
 
-            {
-                document.querySelector('.codeeditor #html-code').addEventListener('keyup', run),
-                document.querySelector('.codeeditor #css-code').addEventListener('keyup', run),
-                document.querySelector('.codeeditor #js-code').addEventListener('keyup', run)
-            }
+                        <Link to="/">Home</Link> <span></span>
+
+                        <Link to="contact">Contact</Link>
+
+                    </nav> </h1>
+
+            </div>
+
+
+
         </div>
 
     )

@@ -4,6 +4,13 @@ import lofiimage from '../lofi_generator w headphones.png'
 import CodeNotes from './CodeNotes';
 import TextEditor from './TextEditor';
 import ThreeEditors from './ThreeEditors';
+import About from './About';
+import Home from './Home';
+import ContactPage from './ContactPage';
+
+
+import { Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
 
@@ -39,18 +46,38 @@ function App() {
         />
       </div>
 
+      <div>
+        <ThreeEditors />
+      </div>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
 
+        <Route path="about" element={<About />} />
 
+        <Route path="contact" element={<ContactPage />} />
 
-
+      </Routes>
 
       <div className='contentbody'
         style={{ transform: `translateY(-${offsetY * 2.4}px)` }}
       >
+
+
+
         <CodeNotes />
 
+
       </div >
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,6 +89,7 @@ function App() {
       </div>
 
       <br></br>
+
 
     </div>
   );

@@ -95,6 +95,31 @@ code {
   
 }
 
+#about{
+  position: relative;
+  top:30px;
+  left:-20px;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+#contact{
+  top:30px;
+
+    position: relative;
+    left:60px;
+    font-family: 'Indie Flower', cursive;
+
+  
+}
+
+.headersforeditors{
+  top:50px;
+  position: relative;
+  text-align: center;
+
+}
+
 #vidcontainer{
   position:relative;
   top:-1750px;
@@ -140,17 +165,28 @@ h1{
 
 
 }
+a:link{
+  color:white;
+}
+a:visited{
+  color:turquoise;
+}
 
+
+#nav {
+  font-family: 'Indie Flower', cursive;
+}
 
 .codeeditor{
   position:relative;
-  top:-2500px;
+  top:-2600px;
   background-color: rgba(0, 0, 0, 0.404);
   width:1000px;
-  height:700px;
+  height:800px;
   margin:auto;
   border-radius: 15px;
   left:-70px;
+  z-index: 0;
   
 
 }

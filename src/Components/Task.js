@@ -25,15 +25,10 @@ function Task({ text, complete, deleteTask, value, task, key }) {
 
 
 
-
-
-
-
     return (
 
 
         <div className='ToDoList' >
-
 
 
             <label
@@ -45,6 +40,7 @@ function Task({ text, complete, deleteTask, value, task, key }) {
             >
                 {text}
             </label>
+
 
 
 

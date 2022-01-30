@@ -45,12 +45,52 @@
 }
 
 
+.codeeditortitles{
+  position:relative;
+  top:-1970px;
+  left:-60px;
+  z-index:3;
+
+}
+.codeeditortitles:link{
+  color:white
+}
+.codeeditortitles:visited{
+  color:turquoise
+}
+
+.aboutpage{
+  position:relative;
+  top:-1330px;
+  background-color: blueviolet;
+  padding:20px;
+  margin:auto;
+  width:1000px;
+  color: white;
+  left:-70px;
+  border-radius: 20px;
+
+}
+
+.contactpage{
+  position:relative;
+  border-radius: 20px;
+  top:-1330px;
+  background-color: #30ac9f;
+  padding:20px;
+  margin:auto;
+  width:1000px;
+  color: white;
+  left:-70px;
+
+}
+
 .Lofipic {
   display: flex;
   justify-content: center;
   position:relative;
   top:120px;
-  left:-60px;
+  left:-70px;
 
 }  
 

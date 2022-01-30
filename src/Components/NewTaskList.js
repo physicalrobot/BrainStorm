@@ -7,14 +7,6 @@ function NewTaskList({ handleAddTask, tasks }) {
 
 
 
-    // function handleSubmit(e) {
-    //     e.preventDefault();
-
-    //     handleAddTask({ text });
-    //     setText('');
-
-    // }
-
 
 
     function handleSubmit(e) {
@@ -39,9 +31,6 @@ function NewTaskList({ handleAddTask, tasks }) {
         // .then((newItem) => setText(newItem))
         // .then((newItem) => handleAddTask({ text }))
         // .then((newItem) => setText(''))
-
-
-
     }
 
 

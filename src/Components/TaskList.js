@@ -10,9 +10,6 @@ function TaskList({ tasks, deleteTask }) {
 
 
     const taskList = tasks.map((task) => (
-        console.log(task),
-
-
         < Task
             key={task.id}
             text={task.text}
@@ -26,6 +23,7 @@ function TaskList({ tasks, deleteTask }) {
             <h2 id='tasklisttitle'>Task List</h2>
             <br></br>
             {taskList}
+
         </div>
     )
 }
