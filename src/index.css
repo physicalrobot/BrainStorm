@@ -174,9 +174,15 @@ a:visited{
   color:turquoise;
 }
 
+#navheaders{
+  width:1000px;
+  margin:auto;
+}
 
 #nav {
   font-family: 'Indie Flower', cursive;
+  width:1000px;
+  margin:auto;
 }
 
 .codeeditor{

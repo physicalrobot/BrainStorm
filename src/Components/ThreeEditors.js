@@ -22,7 +22,7 @@ function ThreeEditors() {
         <div>
             <div class='codeeditortitles'>
 
-                <h1>
+                <h1 id='navheaders'>
                     <nav id='nav'>
 
                         <Link to="/about">About</Link> <span></span>
