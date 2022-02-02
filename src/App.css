@@ -63,7 +63,7 @@
 
 .aboutpage{
   position:relative;
-  top:-820px;
+  top:-300px;
   background-color: blueviolet;
   padding:20px;
   margin:auto;
@@ -81,7 +81,7 @@
 
 .home{
   position:relative;
-  top:-320px;
+  top:-300px;
   background-color: transparent;
   padding:20px;
   margin:auto;
@@ -97,7 +97,7 @@
 .contactpage{
   position:relative;
   border-radius: 20px;
-  top:-820px;
+  top:-300px;
   background-color: #30ac9f;
   padding:20px;
   margin:auto;

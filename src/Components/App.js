@@ -61,7 +61,7 @@ function App() {
       </Routes>
 
       <div className='contentbody'
-        style={{ transform: `translateY(-${offsetY * 2.4}px)` }}
+        style={{ transform: `translateY(-${offsetY * 1.7}px)` }}
       >
 
         <CodeNotes />
@@ -70,7 +70,7 @@ function App() {
 
 
       <div className='textbox'
-        style={{ transform: `translateY(-${offsetY * 2.6}px)` }}
+        style={{ transform: `translateY(-${offsetY * 1.9}px)` }}
       >
         <TextEditor />
       </div>
