@@ -63,7 +63,7 @@
 
 .aboutpage{
   position:relative;
-  top:-320px;
+  top:-820px;
   background-color: blueviolet;
   padding:20px;
   margin:auto;
@@ -75,6 +75,7 @@
   border-radius: 20px;
   z-index: 2;
   font-family: 'Indie Flower', cursive;
+
 
 }
 
@@ -113,6 +114,7 @@
   justify-content: center;
   position:relative;
   left:-70px;
+  height:0;
 
 }  
 
