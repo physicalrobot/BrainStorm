@@ -32,7 +32,6 @@ class TextEditor extends Component {
                     editorClassName="editor-class"
                     toolbarClassName="toolbar-class"
 
-
                 />
                 <br></br>
                 <textarea id='htmltxtarea' disable value={
@@ -43,6 +42,4 @@ class TextEditor extends Component {
         )
     }
 }
-
-
 export default TextEditor;

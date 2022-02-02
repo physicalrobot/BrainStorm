@@ -18,9 +18,6 @@ function CodeNotes() {
             .then((notes) => setTask(notes));
     }, []);
 
-
-
-
     function handleAddTask(newtask) {
         return setTask([...tasks, newtask])
         // console.log(tasks)
