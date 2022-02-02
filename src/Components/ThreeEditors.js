@@ -19,7 +19,7 @@ function ThreeEditors() {
 
 
     return (
-        <div>
+        <div class='divtitles'>
             <div class='codeeditortitles'>
 
                 <h1 id='navheaders'>

@@ -42,7 +42,7 @@ function App() {
       <div className='Lofipic'>
         <div id='lofimg'
           className="lofipicture"
-          style={{ transform: `translateY(-${offsetY * .8}px)` }}
+          style={{ transform: `translateY(-${offsetY * 1.5}px)` }}
         />
       </div>
 
@@ -64,36 +64,19 @@ function App() {
         style={{ transform: `translateY(-${offsetY * 2.4}px)` }}
       >
 
-
-
         <CodeNotes />
-
 
       </div >
 
 
-
-
-
-
-
-
-
-
-
-
-
       <div className='textbox'
-        style={{ transform: `translateY(-${offsetY * 2.4}px)` }}
+        style={{ transform: `translateY(-${offsetY * 2.6}px)` }}
       >
         <TextEditor />
       </div>
-
-      <br></br>
 
 
     </div>
   );
 }
-
 export default App;

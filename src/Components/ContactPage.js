@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 
 const ContactPage = props => {
     return (
-        <div>
+        <div class='divcontact'>
             <div class='contactpage'>
                 <h2>GitHub: https://github.com/physicalrobot
                 </h2><br></br>

@@ -63,7 +63,7 @@
 
 .aboutpage{
   position:relative;
-  top:-1330px;
+  top:-320px;
   background-color: blueviolet;
   padding:20px;
   margin:auto;
@@ -80,7 +80,7 @@
 
 .home{
   position:relative;
-  top:-1330px;
+  top:-320px;
   background-color: transparent;
   padding:20px;
   margin:auto;
@@ -96,7 +96,7 @@
 .contactpage{
   position:relative;
   border-radius: 20px;
-  top:-1330px;
+  top:-820px;
   background-color: #30ac9f;
   padding:20px;
   margin:auto;
@@ -112,25 +112,23 @@
   display: flex;
   justify-content: center;
   position:relative;
-  top:120px;
   left:-70px;
 
 }  
 
 
 
-
   .lofipicture {
     background-image: url("lofi_generator\ w\ headphones.png");
     width: 1000px;
-    height: 600px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: contain;
-    position:absolute;
-
-    
+    position:relative;
+    top:1170px;
+    left:50px;
+    /* left:30%; */
     /* top:0; */
-
   }
 
   
@@ -139,7 +137,7 @@
     width:580px;
     height:400px;
     margin:auto;
-    left:730px;
+    left:740px;
     position:relative;
     background-color: rgba(0, 0, 0, 0.589);   
     color:white; 
