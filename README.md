@@ -7,4 +7,6 @@ This app was created to help improve my efficiency when planning out a program. 
 I also find myself listening to lofi music everytime I code, so I also added feature that toggles lofi music to help set the mood. You can find it if you scroll further down past the image. 
 
 
+Find out more about how I made it here: https://physicalrobot.github.io/code_blog/portfolio/brainstorm/
+
 
