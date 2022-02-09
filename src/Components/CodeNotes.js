@@ -12,6 +12,7 @@ function CodeNotes() {
     const [tasks, setTask] = useState([]);
 
 
+
     useEffect(() => {
         fetch("http://localhost:4000/tasks")
             .then((r) => r.json())

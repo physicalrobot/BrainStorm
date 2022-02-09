@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { v4 as uuid } from "uuid";
 
 
-function Task({ text, complete, deleteTask, value, task, key }) {
+function Task({ text, complete, deleteTask, value, task }) {
 
     const [color, setColor] = useState('white');
     const [dtext, setDtext] = useState('');

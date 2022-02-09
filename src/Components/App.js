@@ -7,6 +7,8 @@ import ThreeEditors from './ThreeEditors';
 import About from './About';
 import Home from './Home';
 import ContactPage from './ContactPage';
+import Counter from './Counter';
+
 
 
 import { Routes, Route, Link } from "react-router-dom";
@@ -27,14 +29,8 @@ function App() {
 
 
 
-
-
   return (
     <div className="App">
-
-
-
-
 
       <br></br>
 
@@ -57,6 +53,9 @@ function App() {
         <Route path="about" element={<About />} />
 
         <Route path="contact" element={<ContactPage />} />
+
+        {/* <Route path="counter" element={<Counter />} /> */}
+
 
       </Routes>
 

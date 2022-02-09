@@ -4,23 +4,45 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function ThreeEditors() {
 
+
     function run() {
+
         let htmlCode = document.querySelector('.codeeditor #html-code').value;
         let cssCode = "<style>" + document.querySelector('.codeeditor #css-code').value + "</style>";
-        let jsCode = document.querySelector('.codeeditor #js-code').value;
+        // let jsCode = document.querySelector('.codeeditor #js-code').value;
         let output = document.querySelector('.codeeditor #output');
 
+
         output.contentDocument.body.innerHTML = htmlCode + cssCode;
-        output.contentWindow.eval(jsCode);
+
     }
-    document.querySelector('.codeeditor #html-code').addEventListener('keyup', run);
-    document.querySelector('.codeeditor #css-code').addEventListener('keyup', run);
-    document.querySelector('.codeeditor #js-code').addEventListener('keyup', run);
+
+    // function jsrun() {
+    //     let htmlCode = document.querySelector('.codeeditor #html-code').value;
+    //     let cssCode = "<style>" + document.querySelector('.codeeditor #css-code').value + "</style>";
+    //     // const jsCode = document.querySelector('.codeeditor #js-code').value;
+    //     let output = document.querySelector('.codeeditor #output');
+
+    //     output.contentWindow.eval(jsCode);
+
+    // }
+    document.querySelector('.codeeditor #html-code').addEventListener('keyup', run)
+    document.querySelector('.codeeditor #css-code').addEventListener('keyup', run)
+    // // document.querySelector('.codeeditor #js-code').addEventListener("keyup", function (event) {
+    //     if (event.keyCode === 13) {
+
+    //         jsrun()
+    //     }
+    // })
 
 
     return (
         <div class='divtitles'>
+
+
             <div class='codeeditortitles'>
+
+
 
                 <h1 id='navheaders'>
                     <nav id='nav'>
@@ -29,7 +51,7 @@ function ThreeEditors() {
 
                         <Link to="/">Home</Link> <span></span>
 
-                        <Link to="contact">Contact</Link>
+                        <Link to="/contact">Contact</Link>
 
                     </nav> </h1>
 

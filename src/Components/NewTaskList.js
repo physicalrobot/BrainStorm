@@ -3,7 +3,7 @@ import '../App.css';
 
 function NewTaskList({ handleAddTask, tasks }) {
 
-    const [text, setText] = useState(tasks);
+    const [text, setText] = useState();
 
 
 
@@ -28,9 +28,6 @@ function NewTaskList({ handleAddTask, tasks }) {
                 handleAddTask(taskData)
                 setText('')
             })
-        // .then((newItem) => setText(newItem))
-        // .then((newItem) => handleAddTask({ text }))
-        // .then((newItem) => setText(''))
     }
 
 
@@ -40,7 +37,6 @@ function NewTaskList({ handleAddTask, tasks }) {
             <br></br>
             <input
                 type="text"
-                value={text}
                 onChange={(e) => setText(e.target.value)}
             />
             <br></br><br></br>

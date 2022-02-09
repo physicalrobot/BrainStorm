@@ -52,7 +52,7 @@
     </div>
 
   </section>
-  <div class='marginbottom'></div>
+  <div className='marginbottom'></div>
 
   <div id="root"></div>
 
@@ -64,14 +64,14 @@
 
     <textarea id='html-code'>HTML code... </textarea>
     <textarea id='css-code'>Css Code... </textarea>
-    <textarea id='js-code'>Javascript Code...</textarea>
+    <!-- <textarea id='js-code'>Javascript Code...</textarea> -->
     <div id='iframe'>
       <iframe id='output'></iframe>
     </div>
   </div>
 
 
-  <script type='text/javascript'>
+  <!-- <script type='text/javascript'>
 
     function run() {
       let htmlCode = document.querySelector('.codeeditor #html-code').value;
@@ -79,16 +79,20 @@
       let jsCode = document.querySelector('.codeeditor #js-code').value;
       let output = document.querySelector('.codeeditor #output');
 
+
       output.contentDocument.body.innerHTML = htmlCode + cssCode;
       output.contentWindow.eval(jsCode);
+
+
+
+
     }
     document.querySelector('.codeeditor #html-code').addEventListener('keyup', run);
     document.querySelector('.codeeditor #css-code').addEventListener('keyup', run);
     document.querySelector('.codeeditor #js-code').addEventListener('keyup', run);
 
 
-
-  </script>
+  </script> -->
 
 
   <div id='vidcontainer'>

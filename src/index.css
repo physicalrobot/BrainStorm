@@ -98,7 +98,7 @@ code {
 #youtube-audio{
   position: sticky;
     bottom:0;
-  width: 2%;
+  width: 3%;
   height: 3%;
   display: flex;
   justify-content: center;
@@ -212,10 +212,10 @@ a:visited{
 
 #html-code{
   position:relative;
-  top: 20%;
+  top: 25%;
   height:200px;
-  width:300px;
-  left:50px;
+  width:350px;
+  left:100px;
   background-color: rgba(0, 0, 0, 0.404);
   border-color: grey;
   color:white;
@@ -224,10 +224,10 @@ a:visited{
 }
 #css-code{
   position:relative;
-  top: 20%;
+  top: 25%;
   height:200px;
-  width:300px;
-  left:50px;
+  width:350px;
+  left:200px;
   background-color: rgba(0, 0, 0, 0.404);
   border-color: grey;
   color:white;
