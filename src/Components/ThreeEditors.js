@@ -37,10 +37,10 @@ function ThreeEditors() {
 
 
     return (
-        <div class='divtitles'>
+        <div className='divtitles'>
 
 
-            <div class='codeeditortitles'>
+            <div className='codeeditortitles'>
 
 
 
