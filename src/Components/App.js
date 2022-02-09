@@ -1,21 +1,19 @@
 import '../App.css';
 import React, { useState, useEffect } from 'react';
-import lofiimage from '../lofi_generator w headphones.png'
 import CodeNotes from './CodeNotes';
 import TextEditor from './TextEditor';
 import ThreeEditors from './ThreeEditors';
 import About from './About';
 import Home from './Home';
 import ContactPage from './ContactPage';
-import Counter from './Counter';
+// import Counter from './Counter';
 
 
 
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 
 function App() {
-
 
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);

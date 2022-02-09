@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TaskList from "./TaskList";
-import TextEditor from './TextEditor'
 import NewTaskList from './NewTaskList'
-import { TASKS } from './data'
-import { v4 as uuid } from "uuid";
 
 
 

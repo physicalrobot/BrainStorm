@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function ThreeEditors() {
@@ -17,23 +17,10 @@ function ThreeEditors() {
 
     }
 
-    // function jsrun() {
-    //     let htmlCode = document.querySelector('.codeeditor #html-code').value;
-    //     let cssCode = "<style>" + document.querySelector('.codeeditor #css-code').value + "</style>";
-    //     // const jsCode = document.querySelector('.codeeditor #js-code').value;
-    //     let output = document.querySelector('.codeeditor #output');
 
-    //     output.contentWindow.eval(jsCode);
-
-    // }
     document.querySelector('.codeeditor #html-code').addEventListener('keyup', run)
     document.querySelector('.codeeditor #css-code').addEventListener('keyup', run)
-    // // document.querySelector('.codeeditor #js-code').addEventListener("keyup", function (event) {
-    //     if (event.keyCode === 13) {
 
-    //         jsrun()
-    //     }
-    // })
 
 
     return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import '../App.css';
 
 function NewTaskList({ handleAddTask, tasks }) {
@@ -33,6 +33,7 @@ function NewTaskList({ handleAddTask, tasks }) {
         < form className="newform" onSubmit={handleSubmit}  >
             <br></br>
             <input
+                className='taskinput'
                 type="text"
                 onChange={(e) => setText(e.target.value)}
                 value={text}

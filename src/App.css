@@ -24,6 +24,8 @@
     color:white;
     background-color:grey;
     font-size: 12px;
+    position:relative;
+    left:25%;
   }
     
   
@@ -31,6 +33,22 @@
   text-align: center;
 }
 
+#tasklists{
+  position:relative;
+  margin-left: 70px;
+}
+
+
+.taskinput{
+  width:180px;
+}
+
+
+.newform{
+  margin-left:60px;
+  top:150px;
+
+}
   
 #htmltxtarea{
   background-color: rgba(128, 128, 128, 0.637);
