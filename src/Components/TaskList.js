@@ -10,12 +10,16 @@ function TaskList({ tasks, deleteTask }) {
 
 
     const taskList = tasks.map((task) => (
-        < Task
-            key={task.id}
-            text={task.text}
-            deleteTask={deleteTask}
-            task={task}
-        />
+        <ul>
+            <li>
+                < Task
+                    key={task.id}
+                    text={task.text}
+                    deleteTask={deleteTask}
+                    task={task}
+                />
+            </li>
+        </ul>
     ));
 
     return (

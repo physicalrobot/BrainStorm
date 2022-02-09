@@ -6,16 +6,13 @@ function NewTaskList({ handleAddTask, tasks }) {
     const [text, setText] = useState();
 
 
-
-
-
     function handleSubmit(e) {
         e.preventDefault();
         const taskData = {
             text: text
         };
 
-
+        // fetches data and sets it to 
         fetch("http://localhost:4000/tasks", {
             method: "POST",
             headers: {
@@ -37,6 +34,7 @@ function NewTaskList({ handleAddTask, tasks }) {
             <br></br>
             <input
                 type="text"
+                value={text}
                 onChange={(e) => setText(e.target.value)}
             />
             <br></br><br></br>

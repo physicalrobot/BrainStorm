@@ -30,7 +30,7 @@ function Task({ text, complete, deleteTask, value, task }) {
 
         <div className='ToDoList' >
 
-
+            {/* <li> */}
             <label
                 style={{ color: color }}
                 onMouseEnter={handleMouseOver}
@@ -40,6 +40,7 @@ function Task({ text, complete, deleteTask, value, task }) {
             >
                 {text}
             </label>
+            {/* </li> */}
 
 
 
