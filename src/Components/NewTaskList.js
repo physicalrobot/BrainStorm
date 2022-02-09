@@ -12,7 +12,7 @@ function NewTaskList({ handleAddTask, tasks }) {
             text: text
         };
 
-        // fetches data and sets it to 
+        // fetches data and sets it to
         fetch("http://localhost:4000/tasks", {
             method: "POST",
             headers: {
@@ -34,8 +34,8 @@ function NewTaskList({ handleAddTask, tasks }) {
             <br></br>
             <input
                 type="text"
-                value={text}
                 onChange={(e) => setText(e.target.value)}
+                value={text}
             />
             <br></br><br></br>
             <input className='todobutton' type="submit" value="Add task" />

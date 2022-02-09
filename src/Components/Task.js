@@ -30,17 +30,16 @@ function Task({ text, complete, deleteTask, value, task }) {
 
         <div className='ToDoList' >
 
-            {/* <li> */}
             <label
                 style={{ color: color }}
                 onMouseEnter={handleMouseOver}
                 onMouseOut={() => setColor('white')}
                 onClick={handleClick}
-
             >
                 {text}
             </label>
-            {/* </li> */}
+
+            <span></span><span></span> <button id='deletebutton' onClick={handleClick}>X</button>
 
 
 
