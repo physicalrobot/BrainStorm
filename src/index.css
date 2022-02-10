@@ -160,6 +160,10 @@ font-family: 'Indie Flower', cursive;
   border-radius: 20px;
 }
 
+div.ToDoList{
+  width:180px
+}
+
 
 h1{ 
   text-align:center;
