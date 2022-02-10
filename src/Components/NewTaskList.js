@@ -3,7 +3,7 @@ import '../App.css';
 
 function NewTaskList({ handleAddTask, tasks }) {
 
-    const [text, setText] = useState();
+    const [text, setText] = useState('');
 
 
     function handleSubmit(e) {
@@ -37,6 +37,7 @@ function NewTaskList({ handleAddTask, tasks }) {
                 type="text"
                 onChange={(e) => setText(e.target.value)}
                 value={text}
+
             />
             <br></br><br></br>
             <input className='todobutton' type="submit" value="Add task" />
