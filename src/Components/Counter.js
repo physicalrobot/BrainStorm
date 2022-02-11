@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
 
+function Counter() {
 
-const Counter = () => {
+
 
     const [counter, setCounter] = useState(0)
     const [word, setWord] = useState('')
 
-    function handleChange() {
-        setWord('biggie')
-
+    function handleSubmit(e) {
+        e.preventDefault();
+        setCounter(word.length)
     }
-    console.log(word)
+
+    function handleChange(input) {
+        setWord(input.target.value)
+    }
 
 
 
     return (
-        <div class='counterdiv'>
-            <div class='counter'>
+        <div className='counterdiv'>
+            <div className='counter'>
 
                 <h1>{counter}</h1>
-                <form>
-                    <input type='text' ></input>
-                    <button>enter</button>
+                <form onSubmit={handleSubmit}>
+                    <input type='text' onChange={handleChange}></input>
+                    <button type='submit'>enter</button>
                 </form>
 
             </div>
